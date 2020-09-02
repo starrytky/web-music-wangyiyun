@@ -4,7 +4,7 @@
  * @Author       : tky
  * @Date         : 2020-09-01 22:19:51
  * @LastEditors  : tky
- * @LastEditTime : 2020-09-02 18:43:17
+ * @LastEditTime : 2020-09-02 21:38:39
  */
 import React, {memo, Suspense} from 'react';
 import { HashRouter } from 'react-router-dom';
@@ -14,7 +14,7 @@ import routes from '@/router';
 
 import HYAppHeader from '@/components/app-header';
 import HYAppFooter from '@/components/app-footer';
-
+import HYAppPlayBar from '@/pages/player/app-play-bar'
 
 
 export default memo(function HYMain(){
