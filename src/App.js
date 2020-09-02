@@ -1,26 +1,25 @@
+/*
+ * @Descripttion : 
+ * @version      : 
+ * @Author       : tky
+ * @Date         : 2020-09-01 17:18:49
+ * @LastEditors  : tky
+ * @LastEditTime : 2020-09-01 23:03:44
+ */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { Provider } from 'react-redux';
+import store from './store';
+
+import HYMain from './pages/main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <HYMain/>
+    </Provider>
+  )
 }
 
 export default App;
+
