@@ -22,6 +22,7 @@ export default memo(function HYMain(){
     <HashRouter>
           <HYAppHeader></HYAppHeader>
           <HYAppFooter></HYAppFooter>
+          <HYAppPlayBar></HYAppPlayBar>
     </HashRouter>
   )
 })
